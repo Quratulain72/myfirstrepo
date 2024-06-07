@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/jquery-3.7.1.min.js">
+    <link rel="stylesheet" href="js/bootstrap.bundle.js">
+    <style>
+        .headingStyle{
+            font-size: 70px;
+        }
+        p{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button id="printname" class="btn btn-primary m-2">Print Name</button>
+    <h1 id="heading"></h1>
+
+
+
+
+
+    <button id="hide">Hide</button>
+
+    <p>Ashar Parekh</p>
+    
+
+
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+  
+    $('#printname').click(function(){
+        $('#heading').html("Aptech Pakistan");
+        $('#heading').css("color","red");
+        $('h1').addClass("headingStyle");
+
+    });
+
+    $("#hide").click(function(){
+    $("p").hide(1000);
+    alert("The paragraph is now hidden");
+  });
+
+});
+
+</script>
+
+
+</html>

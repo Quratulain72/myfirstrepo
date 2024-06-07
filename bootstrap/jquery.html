@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/jquery-3.7.1.min.js">
+    <link rel="stylesheet" href="js/bootstrap.bundle.js">
+</head>
+
+<body>
+
+    <button class="btn btn-primary m-3" id="btnPrint">Print Name</button>
+    <h1 id="headingname"></h1>
+
+
+    <h1 id="myname">Ashar Parekh</h1>
+    <button class="btn btn-warning m-2" id="btnHide">Hide</button>
+    <button class="btn btn-success  m-2" id="btnShow">Show</button>
+
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+        $('#btnPrint').click(function () {
+            $('#headingname').html("Aptech Tariq Road");
+        });
+
+        $('#btnHide').click(function () {
+            $('#myname').hide();
+        });
+
+        $('#btnShow').click(function () {
+            $('#myname').show();
+        });
+    }
+    );
+
+
+</script>
+
+</html>
